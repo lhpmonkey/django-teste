@@ -1,0 +1,2 @@
+# django-teste
+teste
