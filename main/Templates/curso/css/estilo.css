@@ -1,0 +1,169 @@
+body {
+  width: 100%;
+}
+
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 8px;
+    border: 1px solid #000000;
+    padding: 6px;
+}
+
+section {
+    width: 80%;
+    clear: left; /*both/ left / right*/
+    margin-top: 10px;
+    display: inline-block;
+}
+
+    section > div {
+        margin-bottom: 12px;
+        float: left;
+    }
+
+article {
+    width: 40%;
+    background: #99ccff;
+    padding: 6px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 6px;
+    height: 140px;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0px;
+}
+
+
+
+p {
+    font-style: italic;
+}
+
+#logo {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+#logo-relativo {
+
+}
+
+#a1, #a2, #a3 {
+    width: 150px;
+    height: 250px;
+    position: absolute;
+}
+
+#a1 {
+    background-color: #ff0000;
+    top: 250px;
+    left: 950px;
+    z-index: 3;
+}
+
+#a2 {
+    background-color: blue;
+    top: 300px;
+    left: 1000px;
+    z-index: 2;
+}
+
+#a3 {
+    background-color: orange;
+    top: 350px;
+    left: 1050px;
+    z-index: 1;
+}
+
+aside {
+    clear: left;
+    display: block;  
+}
+
+.pesquisa {
+    padding-top: 10px;
+    clear:left;
+    
+    
+}
+
+    .pesquisa input[type=submit] {
+        background-color: #bfb8e6;
+        border-radius: 5px;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+   li>ul:hover {
+       display: block;
+   }
+
+
+
+
+/* media queries*/
+
+@media only screen and (max-width: 400px) {
+    #logo {
+        display: none;
+    }
+
+    li, article {
+        clear: left;
+        height: auto;
+    }
+    
+    article img{
+        width:100%;
+    }
+
+    article p{
+        font-size: 12px;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    li {
+        width: 80%;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    #logo-relativo img {
+        width: 100%;
+    }
+
+    #a1,#a2,#a3 {
+        display: none;
+    }
+   
+    .pesquisa input[type=text]{
+        width: 46%;
+    }
+
+    .pesquisa input[type=submit] {
+        width: 10%;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    #logo {
+        width: 70px;
+    }
+}
+
+/* media queries*/

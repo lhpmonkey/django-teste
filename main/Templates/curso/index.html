@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="Aula de HTML5"/>
+<meta name="keywords" content="posicionamento,css,html5"/>
+<link rel="stylesheet" href="css/estilo.css"/>
+</head>
+
+<body>
+<header> </header>
+<nav>
+	<ul>
+		<li>Home</li>
+		<li>Produtos</li>
+		<li>Mídia</li>
+		<li>Galeria</li>
+		<li>Contato</li>
+	</ul>
+</nav>
+
+    <div class="pesquisa">
+         <form>
+            Pesquisar: <input type="text" pattern="[0-9]\d{3}.\d{3}.\d{3}-\d{2}" placeholder="___-___-___-__"/>
+            <input type="submit" value="Ir" />
+             <br />
+             Sim <input type="radio" name="valor" value="sim" checked/>
+             Não <input type="radio"  name="valor" value="não" />
+             <br />
+             Confira nosso serviços: <input list="servicos" />
+             <datalist id="servicos">
+                 <option value="Arroz">
+                 <option value="Feijão">
+                 <option value="Salsicha">
+             </datalist>
+
+        </form>
+    </div>
+    <hr />
+
+    <section id="s1">
+
+        <div>
+
+            <!-- Artigo 1-->
+
+            <article>
+                <p>
+                    <img alt="[Impacta]" title="Faculdade Impacta" src="image/Faculdade-Impacta-Tecnologia.png" width="70" /><br />
+                    Vidis litro abertis. <i>Consetis adipiscings elitis.</i> Pra lá , depois divoltis porris, paradis.
+                </p> 
+            </article>
+
+            <!-- Artigo 2-->
+            <article>
+                <p>
+                    Mé faiz elementum girarzis, nisi eros<br/>Mé faiz elementum girarzis, nisi eros
+                    <em>vermeio</em>, in elementis mé pra quem é amistosis quis leo.
+                    <br />
+                    Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                </p>
+            </article>
+            </div>
+
+            <!-- Artigo 3-->
+            
+        <div>
+            <article>
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.</p>
+                <div id="logo-relativo">
+                    <img title="Impacta" alt="[Impacta]" src="image/impacta-online.png" />
+                </div>
+            </article>
+
+            <!-- Artigo 4-->
+
+            <article>
+                <p>Vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss  ce receita de bolis, num gostis.
+              </p>
+            </article>
+
+        </div>
+
+        <!-- Conteúdo á parte 
+        <aside>
+            <div id="a1"></div>
+            <div id="a2"></div>
+            <div id="a3"></div>
+        </aside>
+            -->
+
+        <!-- Rodapé -->
+        <footer></footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+function myFunction() {
+  
+  var sheet = SpreadsheetApp.openById("13MKEikkYw3mPIlUKFduqmVP_S52a85N0toZWzcqGPyY");
+  var range = sheet.getRange("Z1");
+  
+  var row = range.getValue();
+  var alunoNome = 1;
+  var cpfAluno = 2;
+  var emailAluno = 3;
+  var cursoAluno = 5;
+  var cargaH = 6;
+  var raAluno = 9;
+  var inicio = 10;
+  var fim = 11;
+  
+  for(x = 0; x < 2000; x++){
+  
+  var nomeAluno = sheet.getSheetValues(row, alunoNome, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var alunoCpf = sheet.getSheetValues(row, cpfAluno, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var alunoEmail = sheet.getSheetValues(row, emailAluno, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var alunoCurso = sheet.getSheetValues(row, cursoAluno, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var cursoCH = sheet.getSheetValues(row, cargaH, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var alunoRA = sheet.getSheetValues(row, raAluno, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var inicioCurso1 = sheet.getSheetValues(row, inicio, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  var fimCurso1 = sheet.getSheetValues(row, fim, 1, 1) //startrow, starcolumn, numrows, numcolumns
+  
+  var inicioCurso = Utilities.formatDate(new Date(inicioCurso1), "GMT", "yyyy-MM-dd");
+  var fimCurso = Utilities.formatDate(new Date(fimCurso1), "GMT", "yyyy-MM-dd");
+  
+  if(alunoRA == ""){
+    break;
+  }
+  
+    if(inicioCurso != "1970-01-01"){
+      //Envia os dados obtidos para o WebService de cadastro dos certificados.
+      var response = UrlFetchApp.fetch('http://helpdesksaintpaul.servicos.ws/certificado/arquivos/scripts/appscript.php?ra=' + alunoRA + '&nome=' + nomeAluno + '&cpf=' + alunoCpf + '&email=' + alunoEmail + '&curso=' + alunoCurso + '&data_inicio=' + inicioCurso + '&data_fim=' + fimCurso + '&carga_horaria=' + cursoCH);
+      Logger.log(response.getResponseCode());
+    
+    }
+  
+    row++;
+    var att = range.setValue(row);
+  }
+  
+}
+
+function onOpen(e){
+  var ui = SpreadsheetApp.getUi();
+  ui.createMenu("Menu").addItem("Cadastrar Certificados", myFunction).addToUi();
+
+}

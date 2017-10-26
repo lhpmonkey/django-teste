@@ -1,0 +1,98 @@
+﻿* {margin:0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; font-weight: normal; box-sizing: border-box; border: none; outline: none;}
+img {max-width: 100%;}
+ul {list-style: none;}
+a {text-decoration: none;}
+h2 {font-size: 1.5em; color: #333;}
+p {font-size: 1em; color: #777;}
+
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0;
+}
+
+header {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #22afc8;
+    text-align: center;
+
+}
+
+ul li {
+    list-style: none;
+    margin: 20px;
+    display: inline;
+}
+
+ul li:hover {
+    color: #22afc8;
+    cursor: pointer;
+}
+
+.menu {width: 100%; float: left; background-color: #333; padding: 18px 8%; color: white;}
+.menu li{float: left;}
+.menu li a {color: #fff;}
+.menu li a:hover {color: #22afc8;}
+
+.chat {
+    float: left;
+    width: 400px;
+}
+.chat p {
+    width: 350px;
+    height: 150px;
+    background-color: #808080;
+    color: white;
+    border-radius: 150px 150px 150px 5px;
+    padding: 30px 30px;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-left: 200px;
+    font-family: 'Brush Script MT';
+    font-size: 26px;
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+
+}
+
+.submit article{
+    margin-bottom: 50px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submit p{
+    width: 100%;
+}
+
+.submit h1{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.principal {
+ padding: 20px 8%; float: left;
+height: 100%;
+background-color: #e8e6e6;
+width: 100%;
+}
+
+aside {
+    float: right;
+}
+
+#console1 {
+    color: red;
+}
+
+#console2 {
+    color: white;
+}

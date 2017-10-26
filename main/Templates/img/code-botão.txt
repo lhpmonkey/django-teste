@@ -1,0 +1,14 @@
+#header .ico-portal {
+  background: url(../img/portal-do-aluno-btn-acess.png) no-repeat;
+  margin-left: 5px;
+  padding: 5px 10px 5px 112px;
+  width: 90px;
+}
+
+
+
+
+					<li class="ico-card-li">
+                        <span class="ico-inbox"></span>
+                        <a title="PORTAL DO ALUNO" class="ico-portal" href="http://www.saintpaul.com.br/portaldoaluno/index.html"></a>
+                    </li>

@@ -1,0 +1,5 @@
+1.App_Themes\SaintPaul\styles.css
+remover a tag display:none da classe .clock
+
+2.para alterar o tempo, ir até \Modules\header.ascx
+bem no rodapé trocar a data
