@@ -18,15 +18,35 @@
         </ul>
     </nav>
     <main class="principal">
-         <section class="formNovo">
+         <section >
 
-            <form class="form-group" action="" method="POST">
-                {% csrf_token %}
-                {{form}}
+            <article>
+            <header>Notícias</header>
+            <br>
+            <p>Escreva aqui suas notícias</p>
+            </article>
 
-            <input type="submit" value="Submit">
-        </form>
         </section>
+
+        <section class="col-md-19" style="margin: 0 auto;">
+            <article>
+            <form class="form-group" style="width:100%; margin: 0 auto;" action="" method="POST">
+                {% csrf_token %}
+                <label><strong>Títuto do Post</strong></label>
+                {{form.post_title}}
+                <br>
+                <label><strong>Conteúdo do Post</strong></label>
+                {{form.post_content}}
+                <br>
+            <input class="btn btn-primary" type="submit" value="Salvar">
+        </form>
+    </article>
+    <article style="border-top: 1px solid #333; margin-top: 20px;">
+        <iframe width="1200" style="border: none;" height="500" src="https://www.r7.com/" name="Globo"></iframe>
+    </article>
+        
+        </section>
+         
     </main>
 
 

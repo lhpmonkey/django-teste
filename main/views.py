@@ -34,3 +34,4 @@ def novo(request):
 
 	return render(request,"novo.html", {'form': form})
 
+
