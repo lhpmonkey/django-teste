@@ -2,3 +2,6 @@ Include/
 Lib/
 Scritps/
 tcl/
+main/migrations
+main\__pycache__
+CMS\__pycache__
